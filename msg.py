@@ -11,14 +11,14 @@ def say_hello():
     
         app.mainloop()
 
+while  True:
+    app = tk.Tk()
+    app.title("linux")
 
-app = tk.Tk()
-app.title("linux")
+    label = tk.Label(app, text="iam linux!")
+    label.pack(pady=10)
 
-label = tk.Label(app, text="iam linux!")
-label.pack(pady=10)
+    button = tk.Button(app, text="ok", command=say_hello)
+    button.pack()
 
-button = tk.Button(app, text="ok", command=say_hello)
-button.pack()
-
-app.mainloop()
+    app.mainloop()
